@@ -32,6 +32,7 @@ public:
    ~Rectangle();         
    void print()
    {
+      using namespace std;
       cout<<width<<":"<<height<<":"<<leftUp->get_x()<<":"<<leftUp->get_y()<<":"<<endl;
    }
 };
