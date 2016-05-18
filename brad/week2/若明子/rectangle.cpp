@@ -24,7 +24,11 @@ Rectangle::~Rectangle()
 {
 
 }
-
+void Rectangle::print()
+{
+      using namespace std;
+      cout<<width<<":"<<height<<":"<<leftUp->get_x()<<":"<<leftUp->get_y()<<":"<<endl;
+}
 int main()
 {
 	Rectangle test(1,2,3,4);
