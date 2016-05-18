@@ -27,6 +27,11 @@ Rectangle::~Rectangle()
 
 int main()
 {
-	
+	Rectangle test(1,2,3,4);
+	Rectangle test_copy(test);
+	Rectangle test_assignment=test_copy;
+	test.print();
+	test_copy.print();
+	test_assignment.print();
 	return 0;
 }

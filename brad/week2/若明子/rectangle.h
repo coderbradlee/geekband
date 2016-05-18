@@ -30,6 +30,10 @@ public:
    Rectangle(const Rectangle& other);
    Rectangle& operator=(const Rectangle& other);
    ~Rectangle();         
+   void print()
+   {
+      cout<<width<<":"<<height<<":"<<leftUp->get_x()<<":"<<leftUp->get_y()<<":"<<endl;
+   }
 };
 
 
