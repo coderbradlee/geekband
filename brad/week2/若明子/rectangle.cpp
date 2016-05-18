@@ -1,4 +1,5 @@
 #include <memory>
+#include <iostream>
 #include "rectangle.h"
 Rectangle::Rectangle(int width, int height, int x, int y):width(width),height(height),leftUp(new Point(x,y))
 {
