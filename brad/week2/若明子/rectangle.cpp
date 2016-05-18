@@ -8,7 +8,7 @@ Rectangle::Rectangle(const Rectangle& other)
 {
 	width=other.width;
 	height=other.height;
-	leftUp=new Point(other.leftUp->x,other.leftUp->y);
+	leftUp=new Point(other.leftUp->get_x(),other.leftUp->get_y());
 }
 
 Rectangle& Rectangle::operator=(const Rectangle& other)
@@ -17,7 +17,7 @@ Rectangle& Rectangle::operator=(const Rectangle& other)
 		return *this;
 	width=other.width;
 	height=other.height;
-	leftUp.reset(new Point(other.leftUp->x,other.leftUp->y));
+	leftUp.reset(new Point(other.leftUp->get_x(),other.leftUp->get_y()));
 	return *this;
 }
 Rectangle::~Rectangle()

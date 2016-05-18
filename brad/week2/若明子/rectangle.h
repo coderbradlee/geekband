@@ -9,6 +9,14 @@ class Point
    int x;
    int y;
 public:
+   int get_x()const
+   {
+      return x;
+   }
+   int get_y()const
+   {
+      return y;
+   }
    Point(int x,int y):x(x),y(y)
    {}
 };              
