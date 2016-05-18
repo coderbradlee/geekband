@@ -11,7 +11,7 @@ Rectangle::Rectangle(const Rectangle& other)
 	leftUp=new Point(other.leftUp->x,other.leftUp->y);
 }
 
-Rectangle::Rectangle& operator=(const Rectangle& other)
+Rectangle& Rectangle::operator=(const Rectangle& other)
 {
 	if(this==&other)
 		return *this;
