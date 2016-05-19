@@ -1,7 +1,7 @@
 #include <memory>
 #include <iostream>
 #include "rectangle.h"
-
+#include <random>
 using namespace std;
 Shape::Shape():no(0)
 {}
