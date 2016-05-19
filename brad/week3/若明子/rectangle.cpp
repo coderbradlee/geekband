@@ -24,7 +24,7 @@ int Point::get_y()const
 }
 Point::Point(int x,int y):x(x),y(y)
 {
-	cout<<"point constructor"<<endl;
+	//cout<<"point constructor"<<endl;
 }
 Point::~Point()
 {
@@ -89,13 +89,13 @@ void test()
 	// test.print();
 	// test_copy.print();
 	// test_assignment.print();
-	Shape* shape_array[20]={0};
+	std::shared_ptr<Shape> shape_array[20]={0};
 	for(int i=0;i<10;++i)
 	{
-		shape_array[i]=new Rectangle(get_random_int(1,10),get_random_int(1,10),get_random_int(1,10),get_random_int(1,10),i);
-		shape_array[i+10]=new Circle(get_random_int(1,10),get_random_int(1,10),get_random_int(1,10),i+10);
+		shape_array[i]=std::shared_ptr<Shape>(new Rectangle(get_random_int(1,10),get_random_int(1,10),get_random_int(1,10),get_random_int(1,10),i));
+		shape_array[i+10]=std::shared_ptr<Shape> new Circle(get_random_int(1,10),get_random_int(1,10),get_random_int(1,10),i+10));
 	}
-	Shape* shape_array_small_area[20]={0};
+	std::shared_ptr<Shape> shape_array_small_area[20]={0};
 	for(int i=0,j=0;i<20;++i)
 	{
 		if(shape_array[i]->getArea()<50)
