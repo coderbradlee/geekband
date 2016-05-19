@@ -45,7 +45,7 @@ public:
    Shape();
    Shape(int n);
    int get_no()const;
-   virtual int getArea()=0;
+   virtual double getArea()=0;
    virtual void print()=0;
 private:                
    int no;
@@ -71,7 +71,7 @@ public:
    Rectangle& operator=(const Rectangle& other);
    ~Rectangle(){}       
    void print();
-   int getArea();
+   double getArea();
 
 };
 class Circle: public Shape
