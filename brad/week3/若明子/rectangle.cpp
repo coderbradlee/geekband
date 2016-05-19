@@ -55,7 +55,7 @@ Rectangle& Rectangle::operator=(const Rectangle& other)
      
 void Rectangle::print()
 {
-	cout<<width<<":"<<height<<":"<<leftUp->get_x()<<":"<<leftUp->get_y()<<":"<<get_no()<<endl;
+	cout<<width<<":"<<height<<":"<<leftUp->get_x()<<":"<<leftUp->get_y()<<":"<<get_no()<<":"<<getArea()<<endl;
 }
 int Rectangle::getArea()
 {
@@ -65,7 +65,7 @@ Circle::Circle(int x,int y,int radius,int no):center(x,y),radius(radius),Shape(n
 {}
 void Circle::print()
 {
-	cout<<center.get_x()<<":"<<center.get_y()<<":"<<radius<<":"<<get_no()<<endl;
+	cout<<center.get_x()<<":"<<center.get_y()<<":"<<radius<<":"<<get_no()<<":"<<getArea()<<endl;
 }
 int Circle::getArea()
 {
