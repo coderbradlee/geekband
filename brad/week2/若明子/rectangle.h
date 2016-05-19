@@ -17,7 +17,7 @@ public:
    int get_x()const;
    int get_y()const;
    Point(int x,int y);
-   ~Point();
+   ~Point(){}
 };              
 class Rectangle: public Shape
 {
@@ -28,7 +28,7 @@ public:
    Rectangle(int width, int height, int x, int y);
    Rectangle(const Rectangle& other);
    Rectangle& operator=(const Rectangle& other);
-   ~Rectangle();        
+   ~Rectangle(){}       
    void print();
 
 };
