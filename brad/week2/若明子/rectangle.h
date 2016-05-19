@@ -16,7 +16,7 @@ class Point
 public:
    int get_x()const;
    int get_y()const;
-   Point(int x,int y):x(x),y(y);
+   Point(int x,int y);
    ~Point();
 };              
 class Rectangle: public Shape
