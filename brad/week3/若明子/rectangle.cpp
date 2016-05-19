@@ -57,7 +57,7 @@ void Rectangle::print()
 {
 	cout<<width<<":"<<height<<":"<<leftUp->get_x()<<":"<<leftUp->get_y()<<":"<<get_no()<<":"<<getArea()<<endl;
 }
-int Rectangle::getArea()
+double Rectangle::getArea()
 {
 	return width*height;
 }
