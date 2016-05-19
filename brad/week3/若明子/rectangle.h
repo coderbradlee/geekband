@@ -46,6 +46,7 @@ public:
    Shape(int n);
    int get_no()const;
    virtual int getArea()=0;
+   virtual void print()=0;
 private:                
    int no;
 };              
