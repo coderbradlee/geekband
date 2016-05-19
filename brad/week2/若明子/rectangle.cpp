@@ -22,23 +22,22 @@ int Point::get_y()const
 }
 Point::Point(int x,int y):x(x),y(y)
 {
-		cout<<"point constructor"<<endl;
+	cout<<"point constructor"<<endl;
 }
 Point::~Point()
 {
-		cout<<x<<":"<<y<<":point destructor"<<endl;
+	cout<<x<<":"<<y<<":point destructor"<<endl;
 }
          
 
 Rectangle::Rectangle(int width, int height, int x, int y):width(width),height(height),leftUp(new Point(x,y)),Shape(10)
 {
-
 }
 Rectangle::Rectangle(const Rectangle& other)
 {
 	width=other.width;
-height=other.height;
-leftUp=std::shared_ptr<Point>((new Point(other.leftUp->get_x(),other.leftUp->get_y())));
+	height=other.height;
+	leftUp=std::shared_ptr<Point>((new Point(other.leftUp->get_x(),other.leftUp->get_y())));
 }
 Rectangle& Rectangle::operator=(const Rectangle& other)
 {
