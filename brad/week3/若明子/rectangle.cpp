@@ -67,7 +67,7 @@ void Circle::print()
 {
 	cout<<center.get_x()<<":"<<center.get_y()<<":"<<radius<<":"<<get_no()<<":"<<getArea()<<endl;
 }
-int Circle::getArea()
+double Circle::getArea()
 {
 	return PI*radius*radius;
 }
