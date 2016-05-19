@@ -81,6 +81,7 @@ int radius;
 public:
    Circle(int x,int y,int radius,int no);
    int getArea();
+   void print();
 };
 
 #endif
