@@ -3,6 +3,7 @@
 #include "rectangle.h"
 #include <random>
 using namespace std;
+const double PI=3.1415926;
 Shape::Shape():no(0)
 {}
 Shape::Shape(int n):no(n)
@@ -56,11 +57,19 @@ void Rectangle::print()
 {
 	cout<<width<<":"<<height<<":"<<leftUp->get_x()<<":"<<leftUp->get_y()<<":"<<get_no()<<endl;
 }
+int Rectangle::getArea()
+{
+	return width*height;
+}
 Circle::Circle(int x,int y,int radius,int no):center(x,y),radius(radius),Shape(no)
 {}
-Circle::print()
+void Circle::print()
 {
 	cout<<center.get_x()<<":"<<center.get_y()<<":"<<radius<<":"<<get_no()<<endl;
+}
+int Circle::getArea()
+{
+	return PI*radius*radius;
 }
 int get_random_int(int a, int b) 
 {  
