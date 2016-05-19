@@ -1,7 +1,12 @@
 #ifndef __RECTANGLE_H__
 #define __RECTANGLE_H__
 class Shape
-{                   
+{  
+public: 
+   Shape();
+   Shape(int n);
+   int get_no()const;
+private:                
    int no;
 };              
 class Point
@@ -9,16 +14,10 @@ class Point
    int x;
    int y;
 public:
-   int get_x()const
-   {
-      return x;
-   }
-   int get_y()const
-   {
-      return y;
-   }
-   Point(int x,int y):x(x),y(y)
-   {}
+   int get_x()const;
+   int get_y()const;
+   Point(int x,int y):x(x),y(y);
+   ~Point();
 };              
 class Rectangle: public Shape
 {
@@ -29,7 +28,7 @@ public:
    Rectangle(int width, int height, int x, int y);
    Rectangle(const Rectangle& other);
    Rectangle& operator=(const Rectangle& other);
-   ~Rectangle();         
+   ~Rectangle();        
    void print();
 
 };
