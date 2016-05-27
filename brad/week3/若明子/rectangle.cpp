@@ -66,6 +66,7 @@ Circle::Circle(int x,int y,int radius,int no):center(x,y),radius(radius),Shape(n
 void Circle::print()
 {
 	cout<<center.get_x()<<":"<<center.get_y()<<":"<<radius<<":"<<get_no()<<":"<<getArea()<<endl;
+	cout<<Shape::no<<endl;
 }
 double Circle::getArea()
 {
