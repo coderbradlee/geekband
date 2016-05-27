@@ -6,6 +6,9 @@ using namespace std;
 
 void test()
 {
+	cout<<sizeof(char)<<endl;
+	cout<<sizeof(int)<<endl;
+	cout<<sizeof(double)<<endl;
 	cout<<sizeof(Fruit)<<endl;
 	cout<<sizeof(Apple)<<endl;
 }
