@@ -18,6 +18,14 @@ void test()
 }
 int main()
 {
-	test();
+	try
+	{
+		test();
+	}
+	catch(const exception& e)
+	{
+		cout<<e.what<<endl;
+	}
+	
 	return 0;
 }
