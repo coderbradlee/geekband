@@ -24,7 +24,7 @@ int main()
 	}
 	catch(const exception& e)
 	{
-		cout<<e.what<<endl;
+		cout<<e.what()<<endl;
 	}
 	
 	return 0;
