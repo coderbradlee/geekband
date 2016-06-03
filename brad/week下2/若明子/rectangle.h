@@ -19,7 +19,7 @@ public:
 //    void save() {   }
 //    virtual void process(){   }
 // };
-class bad{};
+class bad:public exception{};
 class Apple: public Fruit
 {
 public:
