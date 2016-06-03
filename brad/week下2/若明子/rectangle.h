@@ -1,6 +1,6 @@
 #ifndef __RECTANGLE_H__
 #define __RECTANGLE_H__
-
+using namespace std;
 class Fruit
 {
    int no;
