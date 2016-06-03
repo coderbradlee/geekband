@@ -13,8 +13,8 @@ void test()
     Apple* p4=new(100,'a')Apple;
     //Apple* p5=new(100)Apple(1);
     //Apple* p6=new(100,'a')Apple(1);
-    //Apple* p7=new(&start)Apple(1);
-    Apple* p8=new Apple(1);
+    Apple* p7=new(&start)Apple(1);
+    //Apple* p8=new Apple(1);
 }
 int main()
 {
